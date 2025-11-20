@@ -1,37 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luis Vicente Latorraca Contreras - Chevron Venezuela</title>
+  <title>Luis Vicente Latorraca Contreras - Chevron-Oriented CV</title>
   <style>
-    body { margin:0; padding:0; font-family: Calibri, Arial, sans-serif; background:#f8f9fa; color:#333; line-height:1.6; }
-    .container { max-width:1200px; margin:0 auto; background:white; box-shadow:0 10px 30px rgba(0,0,0,0.1); }
-    .header { background:#002856; color:white; padding:50px 60px; display:flex; align-items:center; border-bottom:12px solid #00A3E0; }
-    .photo { width:210px; height:210px; border-radius:50%; border:10px solid white; box-shadow:0 10px 30px rgba(0,0,0,0.6); object-fit:cover; flex-shrink:0; }
-    .header-text { margin-left:60px; }
-    .name { font-size:52pt; font-weight:bold; margin:0; line-height:1; }
-    .title { font-size:24pt; margin:10px 0 0; line-height:1.1; }
-    .contact { font-size:15pt; margin-top:30px; line-height:1.7; }
-    .content { padding:60px 70px; }
-    .section-title { color:#002856; font-size:26pt; font-weight:bold; text-align:center; margin:70px 0 40px 0; position:relative; }
-    .section-title::after { content:''; display:block; width:120px; height:5px; background:#00A3E0; margin:15px auto; }
-    .letter { font-size:14.5pt; text-align:justify; }
-    .signature { margin-top:100px; font-size:15pt; }
-    ul { margin:12px 0 25px 20px; }
-    li { margin-bottom:8px; }
-    strong { color:#00A3E0; }
-    .final-note { text-align:center; padding:60px 0; font-size:19pt; color:#002856; font-weight:bold; background:#f0f8ff; margin:80px -70px -60px -70px; }
-    em { font-style: italic; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Calibri, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: #002856;
+      color: #ffffff;
+      padding: 40px 60px;
+      display: flex;
+      align-items: center;
+      border-bottom: 10px solid #00A3E0;
+    }
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 8px solid #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .header-text {
+      margin-left: 50px;
+    }
+    .name {
+      font-size: 40pt;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.1;
+    }
+    .title {
+      font-size: 18pt;
+      margin: 8px 0 0;
+    }
+    .contact {
+      font-size: 12pt;
+      margin-top: 20px;
+      line-height: 1.7;
+    }
+    .lang-switch {
+      text-align: right;
+      padding: 15px 60px 0;
+      background: #ffffff;
+    }
+    .lang-switch button {
+      border: 1px solid #002856;
+      background: #ffffff;
+      color: #002856;
+      padding: 6px 14px;
+      margin-left: 8px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-size: 11pt;
+    }
+    .lang-switch button.active {
+      background: #002856;
+      color: #ffffff;
+    }
+    .content {
+      padding: 40px 70px 60px;
+    }
+    .section-title {
+      color: #002856;
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin: 50px 0 30px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 4px;
+      background: #00A3E0;
+      margin: 10px auto 0;
+    }
+    .letter {
+      font-size: 11.5pt;
+      text-align: justify;
+      margin-bottom: 12px;
+    }
+    .signature {
+      margin-top: 50px;
+      font-size: 11.5pt;
+    }
+    p, li {
+      font-size: 11.5pt;
+    }
+    ul {
+      margin: 5px 0 20px 20px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    strong {
+      color: #00A3E0;
+    }
+    em {
+      font-style: italic;
+    }
+    .final-note {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13pt;
+      color: #002856;
+      font-weight: bold;
+      background: #f0f8ff;
+      margin: 40px -70px -40px -70px;
+    }
+    .lang-section {
+      display: none;
+    }
   </style>
 </head>
 <body>
 
 <div class="container">
 
-  <!-- HEADER -->
+  <!-- HEADER (COMÚN A AMBOS IDIOMAS) -->
   <div class="header">
-    <!-- Cambia la foto por la URL que prefieras -->
+    <!-- Cambia la URL de la foto si lo deseas -->
     <img src="https://i.ibb.co/pBXf8DMZ/1571810156873.jpg" class="photo" alt="Luis Vicente Latorraca Contreras">
     <div class="header-text">
       <h1 class="name">Luis Vicente Latorraca Contreras</h1>
@@ -41,287 +146,582 @@
       </p>
       <p class="contact">
         Holambra, São Paulo, Brazil<br>
-        <strong>Preferencia absoluta: Anzoátegui / Faja Petrolífera del Orinoco<br>
-        Totalmente flexible a cualquier ubicación o rotación según Chevron</strong><br><br>
+        <strong>High interest in roles based in Venezuela (Orinoco Belt / Upstream Operations)<br>
+        Fully open to rotational or permanent assignments</strong><br><br>
         Tel: +55 959 99125-8519 · Email: luislatorraca@gmail.com<br>
         LinkedIn: linkedin.com/in/luis-latorraca-71308223
       </p>
     </div>
   </div>
 
+  <!-- SWITCH DE IDIOMA -->
+  <div class="lang-switch">
+    <span style="font-size:10.5pt; margin-right:6px; color:#444;">Language / Idioma:</span>
+    <button id="btn-en" class="active" onclick="showLang('en')">EN</button>
+    <button id="btn-es" onclick="showLang('es')">ES</button>
+  </div>
+
   <div class="content">
 
-    <!-- COVER LETTER -->
-    <p style="text-align:right; font-size:14pt; color:#555;">20 de noviembre de 2025</p>
+    <!-- =========================
+         VERSION EN INGLÉS
+    ========================== -->
+    <section id="cv-en" class="lang-section">
 
-    <p style="margin-bottom:40px;">
-      Hiring Manager<br>
-      Chevron Venezuela<br>
-      careers.chevron.com
-    </p>
+      <!-- COVER LETTER EN -->
+      <p style="text-align:right; font-size:11.5pt; color:#555;">November 20, 2025</p>
 
-    <p class="letter">Estimado Responsable de Selección,</p>
+      <p>
+        Hiring Manager<br>
+        Chevron Venezuela<br>
+        careers.chevron.com
+      </p>
 
-    <p class="letter">
-      Me postulo a posiciones técnicas, operativas, de Operational Excellence, supply chain, tecnología o contratos
-      dentro de las operaciones de Chevron en Venezuela, <strong>con fuerte preferencia por roles basados en
-      Anzoátegui / Faja Petrolífera del Orinoco</strong>, región donde trabajé 9 años en PDVSA Petroanzoátegui,
-      específicamente en las áreas Bared y Arecuna, en plantas de deshidratación de crudos extrapesados de hasta
-      95.000 bbl/d.
-    </p>
+      <p class="letter">
+        Dear Hiring Manager,
+      </p>
 
-    <p class="letter">
-      Soy un profesional formado en el campo, con experiencia directa en estaciones recolectoras, plantas de
-      inyección de agua salada, salas de control y monitoreo telemétrico de procesos de deshidratación de crudos
-      extrapesados, incluyendo la operación y supervisión de separadores, hornos, tanques, sistemas de dilución y
-      análisis de corte de agua y sedimentos.
-      A esto se suma una trayectoria de más de 20 años en liderazgo tecnológico: fui
-      <strong>Director Regional de la Oficina de Tecnología de Información y Comunicaciones (OTIC) del Instituto de Salud Pública del Estado Bolívar (ISPEB)</strong>,
-      <strong>Negociador Internacional Senior en CEMEX Planta Guayana</strong>,
-      <strong>VPO y Director General de una compañía de desarrollo de software con más de 80 personas a mi cargo</strong>,
-      y actualmente trabajo de forma remota para una agencia de marketing de Puerto Rico, integrando automatización
-      digital e inteligencia artificial en sus procesos.
-    </p>
+      <p class="letter">
+        I am writing to express my interest in technical, operations, digital transformation or
+        upstream support roles within Chevron Venezuela, preferably in assignments connected to
+        the <strong>Orinoco Oil Belt</strong> and field operations. I bring <strong>nine years of
+        direct hands-on experience</strong> in extra-heavy crude oil treatment in PDVSA
+        Petroanzoátegui (Bared and Arecuna areas, facilities up to 95,000 bbl/d), combined with
+        more than two decades leading technology, software development and process automation teams.
+      </p>
 
-    <p class="letter">
-      En los últimos años he desarrollado de forma práctica habilidades de
-      <strong>prompt engineering e interacción avanzada con inteligencias artificiales</strong>,
-      aplicadas a automatización de flujos, análisis de datos y creación de herramientas digitales.
-      Esto me permite aportar una combinación poco común de experiencia: conocimiento profundo del
-      <strong>proceso físico y químico de tratamiento de crudos extrapesados</strong>,
-      sumado a la capacidad de <strong>diseñar, optimizar o apoyar la implementación de soluciones de campo digital
-      (digital oilfield) y sistemas de apoyo a la decisión</strong>.
-    </p>
+      <p class="letter">
+        My field background covers <strong>gathering stations, water injection plants, control rooms
+        and telemetric monitoring of dehydration processes for extra-heavy crudes</strong>, including
+        operation and supervision of separators, heaters, tanks, dilution systems and water cut
+        analysis. In parallel, I have held positions such as
+        <strong>Regional Director of Information Technology (OTIC) at the Public Health Institute of
+        Bolívar State (ISPEB)</strong>, <strong>Senior International Negotiator at CEMEX Guayana
+        Plant</strong>, <strong>IT Manager at Venirantractor C.A.</strong> and
+        <strong>VP of Operations / General Director of a software development company with more than
+        80 people</strong>.
+      </p>
 
-    <p class="letter">
-      Estoy preparado para asumir responsabilidades tanto en campo como en oficina:
-      <strong>acepto sin reservas esquemas rotacionales (14×14, 28×28) o residencia permanente en Anzoátegui</strong>,
-      en cualquier instalación donde Chevron lo requiera. Me encuentro en buenas condiciones físicas y con plena
-      disposición para regresar a Venezuela de inmediato si se abre una oportunidad alineada con mi perfil.
-    </p>
+      <p class="letter">
+        Over the last years I have also specialized in <strong>prompt engineering and advanced
+        interaction with AI systems</strong>, using tools such as ChatGPT and others to support
+        automation, data analysis, documentation and decision-making. This combination of
+        <strong>deep physical process knowledge in extra-heavy crude treatment</strong> and
+        <strong>digital & AI capabilities</strong> allows me to contribute both on site and in
+        initiatives such as <em>digital oilfield, operational excellence, reliability and
+        optimization of automated systems</em>.
+      </p>
 
-    <p class="letter">
-      Agradezco de antemano la revisión de mi candidatura. Quedo a su disposición para una entrevista, en la cual
-      podré detallar cómo mi experiencia en la Faja, mi liderazgo de equipos multidisciplinarios y mi dominio de
-      herramientas digitales e inteligencia artificial pueden contribuir a la seguridad, eficiencia y confiabilidad
-      de las operaciones de Chevron en Venezuela.
-    </p>
+      <p class="letter">
+        I am fully prepared to take on responsibilities either in field locations or office
+        environments, under <strong>rotational or permanent schemes</strong>, and I am ready to
+        relocate back to Venezuela as soon as required. I am in very good health and willing to
+        face challenging assignments where safety, discipline and teamwork are critical.
+      </p>
 
-    <p class="signature">
-      Atentamente,<br><br><br>
-      Luis Vicente Latorraca Contreras<br>
-      Tel: +55 959 99125-8519 · Email: luislatorraca@gmail.com
-    </p>
+      <p class="letter">
+        Thank you very much for considering my application. I would welcome the opportunity to
+        discuss how my background in extra-heavy crude operations, team leadership and digital
+        transformation can support Chevron’s objectives in Venezuela.
+      </p>
 
-    <!-- DIVISOR -->
-    <h2 class="section-title">CURRICULUM VITAE</h2>
+      <p class="signature">
+        Sincerely,<br><br>
+        Luis Vicente Latorraca Contreras<br>
+        Tel: +55 959 99125-8519 · Email: luislatorraca@gmail.com
+      </p>
 
-    <!-- RESUMEN PROFESIONAL -->
-    <h2 class="section-title">RESUMEN PROFESIONAL</h2>
+      <!-- DIVISOR -->
+      <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
 
-    <p style="text-align:justify; font-size:13.5pt;">
-      Profesional venezolano del petróleo con <strong>9 años de experiencia directa de campo</strong> en tratamiento
-      y deshidratación de crudos extrapesados en la Faja Petrolífera del Orinoco
-      (PDVSA Petroanzoátegui – áreas Bared y Arecuna – instalaciones de hasta 95.000 bbl/d).
-      Amplio dominio de separadores, hornos, sistemas de dilución, análisis de corte de agua, calibración de
-      instrumentación, telemetría y optimización de procesos de deshidratación y manejo de crudos extrapesados.
-    </p>
+      <p>
+        Venezuelan oil professional with <strong>9 years of direct field experience</strong> in
+        <strong>extra-heavy crude oil dehydration and treatment</strong> in the Orinoco Oil Belt
+        (PDVSA Petroanzoátegui – Bared and Arecuna areas – facilities up to 95,000 bbl/d).
+        Strong hands-on background with gathering systems, water injection plants, separators,
+        heaters, storage tanks, dilution systems, water cut and BS&amp;W analysis, instrumentation
+        checks and telemetric monitoring of production data.
+      </p>
 
-    <p style="text-align:justify; font-size:13.5pt;">
-      Posteriormente he desarrollado una sólida carrera en <strong>dirección de tecnología, gestión de proyectos y
-      desarrollo de software</strong>, ocupando posiciones como
-      <strong>Director Regional de Informática (OTIC) del Instituto de Salud Pública del Estado Bolívar (ISPEB)</strong>,
-      <strong>Negociador Internacional Senior en CEMEX Planta Guayana</strong>,
-      <strong>Gerente de Sistemas en Venirantractor C.A.</strong> y
-      <strong>VPO / Director General de Orusys / Orusnet Games &amp; Apps</strong>, liderando equipos de más de
-      80 personas y proyectos complejos de transformación digital.
-    </p>
+      <p>
+        After my initial oilfield career, I built a solid track record in
+        <strong>IT leadership, project management and software development</strong>, holding roles
+        such as <strong>Regional IT Director (OTIC) at ISPEB</strong>,
+        <strong>Senior International Negotiator at CEMEX Guayana</strong>,
+        <strong>IT Manager at Venirantractor C.A.</strong> and
+        <strong>VP of Operations / General Director of Orusys / Orusnet</strong>, managing teams of
+        over 80 people and leading complex digital transformation projects.
+      </p>
 
-    <p style="text-align:justify; font-size:13.5pt;">
-      Desde 2020 trabajo de forma remota para una agencia de marketing de Puerto Rico, como
-      <strong>WordPress Developer &amp; Consultor en Automatización de Procesos Digitales</strong>, integrando
-      herramientas de IA (prompt engineering) y automatizaciones en múltiples plataformas. Esta combinación de
-      experiencia en campo petrolero, gestión de tecnología y automatización con IA me posiciona como un candidato
-      capaz de aportar tanto en la <strong>optimización de procesos físicos de tratamiento de crudo</strong> como
-      en la <strong>mejora de sistemas digitales y de información que los soportan</strong>.
-    </p>
+      <p>
+        Since 2020 I have been working remotely for a Puerto Rico–based marketing agency as a
+        <strong>WordPress Developer &amp; Process Automation Consultant</strong>,
+        integrating <strong>AI tools and automation platforms</strong> into multiple workflows.
+        This provides a rare combination of <strong>deep field operations knowledge</strong> and
+        <strong>modern digital skills</strong>.
+      </p>
 
-    <p style="text-align:justify; font-size:13.5pt;">
-      <strong>Idiomas:</strong> Español (nativo) · Inglés (fluido) · Portugués (fluido)
-    </p>
+      <p>
+        <strong>Languages:</strong> Spanish (native) · English (fluent) · Portuguese (fluent).
+      </p>
 
-    <!-- EXPERIENCIA PROFESIONAL -->
-    <h2 class="section-title">EXPERIENCIA PROFESIONAL</h2>
+      <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
 
-    <p>
-      <strong>WordPress Developer &amp; Consultor en Automatización de Procesos Digitales</strong><br>
-      <em>Infinity Media – Agencia de Marketing Digital, Puerto Rico (modalidad remota)</em><br>
-      <span>2020 – Presente</span>
-    </p>
-    <ul>
-      <li>Diseño, desarrollo y mantenimiento de sitios web corporativos, e-commerce y landing pages de alto rendimiento.</li>
-      <li>Implementación de flujos de automatización (Make, Zapier, CRMs) y uso intensivo de IA (ChatGPT, Claude, Gemini, Grok) para acelerar análisis, documentación y toma de decisiones.</li>
-      <li>Optimización de procesos digitales susceptibles de ser adaptados a entornos industriales (tableros de control, reporting automatizado, seguimiento de indicadores).</li>
-    </ul>
+      <p>
+        <strong>WordPress Developer &amp; Digital Process Automation Consultant</strong><br>
+        <em>Infinity Media – Marketing Agency (Puerto Rico, remote)</em><br>
+        <span>2020 – Present</span>
+      </p>
+      <ul>
+        <li>Design, development and maintenance of high-performance corporate, e-commerce and landing websites.</li>
+        <li>Implementation of automation workflows (CRMs, integration platforms) and intensive use of AI for analysis, documentation and reporting.</li>
+        <li>Creation of dashboards and tools that can be translated to industrial environments (operational KPIs, reporting, data visualization).</li>
+      </ul>
 
-    <p>
-      <strong>Vicepresidente de Operaciones / Director General</strong><br>
-      <em>Orusys de Venezuela / Orusnet Games &amp; Apps Development Company – Caracas, Venezuela</em><br>
-      <span>2005 – 2020</span>
-    </p>
-    <ul>
-      <li>Dirección integral de una compañía de desarrollo de software y videojuegos, con más de 80 colaboradores.</li>
-      <li>Definición de estrategias, planes de negocio y modelos de servicio orientados a soluciones corporativas y productos propios.</li>
-      <li>Implementación de metodologías ágiles, mejora continua y sistemas de monitoreo de desempeño (KPIs y tableros de mando).</li>
-      <li>Experiencia transferible a la gestión de proyectos de automatización, digitalización de operaciones y soporte a instalaciones industriales complejas.</li>
-    </ul>
+      <p>
+        <strong>VP of Operations / General Director</strong><br>
+        <em>Orusys de Venezuela / Orusnet Games &amp; Apps Development – Caracas, Venezuela</em><br>
+        <span>2005 – 2020</span>
+      </p>
+      <ul>
+        <li>Full P&amp;L and operational responsibility for a software and games development company with more than 80 people.</li>
+        <li>Definition of strategy, business models and service portfolios for corporate clients and proprietary products.</li>
+        <li>Implementation of agile methodologies, performance metrics and continuous improvement practices.</li>
+      </ul>
 
-    <p>
-      <strong>Director Regional de la Oficina de Tecnología de Información y Comunicaciones (OTIC)</strong><br>
-      <em>Instituto de Salud Pública del Estado Bolívar (ISPEB) – Estado Bolívar, Venezuela</em><br>
-      <span>2012 – 2013</span>
-    </p>
-    <ul>
-      <li>Responsable de la infraestructura tecnológica regional de salud pública, integrando sistemas, comunicaciones y soporte a usuarios.</li>
-      <li>Gestión de equipos técnicos, priorización de proyectos y alineación de la estrategia tecnológica con las necesidades sanitarias del estado.</li>
-      <li>Definición de políticas de seguridad, continuidad operativa y estándares de calidad para sistemas críticos.</li>
-    </ul>
+      <p>
+        <strong>Regional IT Director – OTIC</strong><br>
+        <em>Instituto de Salud Pública del Estado Bolívar (ISPEB) – Bolívar State, Venezuela</em><br>
+        <span>2012 – 2013</span>
+      </p>
+      <ul>
+        <li>Responsible for the regional IT and communications infrastructure supporting public health services.</li>
+        <li>Management of multidisciplinary technical teams and alignment of IT strategy with healthcare priorities.</li>
+        <li>Definition of security, availability and quality standards for critical systems.</li>
+      </ul>
 
-    <p>
-      <strong>Gerente de Proyectos</strong><br>
-      <em>GSI Fábrica de Software – Caracas, Venezuela</em><br>
-      <span>2011 – 2012</span>
-    </p>
-    <ul>
-      <li>Administración de proyectos de desarrollo de software a medida para clientes corporativos.</li>
-      <li>Coordinación de equipos multidisciplinarios (desarrollo, QA, soporte) y control de cronogramas, presupuestos y entregables.</li>
-    </ul>
+      <p>
+        <strong>Project Manager</strong><br>
+        <em>GSI Fábrica de Software – Caracas, Venezuela</em><br>
+        <span>2011 – 2012</span>
+      </p>
+      <ul>
+        <li>Management of custom software development projects for corporate clients.</li>
+        <li>Coordination of development, QA and support teams, ensuring deadlines, budget and quality targets.</li>
+      </ul>
 
-    <p>
-      <strong>Gerente de Sistemas</strong><br>
-      <em>Venirantractor C.A. – Zona Industrial Los Farallones, Estado Bolívar, Venezuela</em><br>
-      <span>2007 – 2009</span>
-    </p>
-    <ul>
-      <li>Gestión de la plataforma tecnológica corporativa, incluyendo redes, servidores, sistemas de gestión y soporte a usuarios.</li>
-      <li>Implementación de políticas y procedimientos de TI orientados a confiabilidad, seguridad y disponibilidad de la información.</li>
-    </ul>
+      <p>
+        <strong>IT Manager</strong><br>
+        <em>Venirantractor C.A. – Los Farallones Industrial Area, Bolívar State, Venezuela</em><br>
+        <span>2007 – 2009</span>
+      </p>
+      <ul>
+        <li>Management of corporate IT infrastructure (networks, servers, business systems and user support).</li>
+        <li>Implementation of IT policies focusing on reliability, security and availability.</li>
+      </ul>
 
-    <p>
-      <strong>Negociador Internacional Senior</strong><br>
-      <em>CEMEX de Venezuela C.A. – Planta Guayana, Estado Bolívar, Venezuela</em><br>
-      <span>2005 – 2007</span>
-    </p>
-    <ul>
-      <li>Negociación de contratos y adquisiciones de materiales, bienes y servicios con proveedores nacionales e internacionales.</li>
-      <li>Optimización de costos, tiempos de entrega y calidad, siempre bajo el cumplimiento de políticas de seguridad, ambiente y calidad.</li>
-    </ul>
+      <p>
+        <strong>Senior International Negotiator</strong><br>
+        <em>CEMEX de Venezuela C.A. – Guayana Plant, Bolívar State, Venezuela</em><br>
+        <span>2005 – 2007</span>
+      </p>
+      <ul>
+        <li>Negotiation of contracts and procurement for materials, goods and services with national and international suppliers.</li>
+        <li>Optimization of cost, quality and delivery times under strict safety and environmental standards.</li>
+      </ul>
 
-    <p>
-      <strong>Técnico de Tratamiento de Crudo Extrapesado</strong><br>
-      <em>Petróleos de Venezuela S.A. (PDVSA Petroanzoátegui) – San Tomé, Estado Anzoátegui, Venezuela</em><br>
-      <span>1994 – 2002</span>
-    </p>
-    <ul>
-      <li>Operación de estaciones recolectoras de crudo y plantas de inyección de agua salada en el área Bared y Arecuna.</li>
-      <li>Operador de sala de control para recibo y distribución de crudo y diluente, y monitoreo telemétrico de parámetros operacionales (pozos y plantas deshidratadoras).</li>
-      <li>Muestreo y análisis del contenido de agua y sedimentos del crudo, control de equipos de tratamiento (separadores gas-petróleo, hornos, tanques, bombas, medidores, etc.).</li>
-      <li>Mantenimiento menor de equipos e instrumentos, elaboración de informes mensuales de producción y rendimiento, y apoyo en automatización de procesos.</li>
-    </ul>
+      <p>
+        <strong>Extra-Heavy Crude Oil Treatment Technician</strong><br>
+        <em>Petróleos de Venezuela S.A. (PDVSA Petroanzoátegui) – San Tomé, Anzoátegui, Venezuela</em><br>
+        <span>1994 – 2002</span>
+      </p>
+      <ul>
+        <li>Operation of crude gathering stations and water injection plants in Bared and Arecuna operating areas.</li>
+        <li>Control room operator for crude and diluent receiving and distribution, and telemetric monitoring of wells and dehydration plants.</li>
+        <li>Sampling and analysis of water and sediment content (BS&amp;W), operation of separators, heaters, tanks, pumps and meters.</li>
+        <li>Minor maintenance and preparation of monthly reports on production, quality and operational performance.</li>
+      </ul>
 
-    <h2 class="section-title">EXPERIENCIA TEMPRANA</h2>
+      <h2 class="section-title">EARLY EXPERIENCE</h2>
 
-    <p>
-      <strong>Jefe del Departamento de Informática</strong><br>
-      <em>Unión Israelita de Caracas – Caracas, Venezuela</em><br>
-      <span>1993 – 1994</span>
-    </p>
-    <ul>
-      <li>Planificación, organización y control de las actividades de sistemas de la institución.</li>
-      <li>Administración de redes, software y hardware, soporte a usuarios de múltiples áreas y emisión de reportes gerenciales.</li>
-    </ul>
+      <p>
+        <strong>Head of IT Department</strong><br>
+        <em>Unión Israelita de Caracas – Caracas, Venezuela</em><br>
+        <span>1993 – 1994</span>
+      </p>
+      <ul>
+        <li>Planning and supervision of institutional IT activities.</li>
+        <li>Network administration, software and hardware management, and user support.</li>
+      </ul>
 
-    <p>
-      <strong>Jefe del Departamento de Informática</strong><br>
-      <em>DSD-CGI C.A. Compañía General de Industrias – Puerto Ordaz, Venezuela</em><br>
-      <span>1994 – 1995</span>
-    </p>
-    <ul>
-      <li>Mantenimiento de la red informática y administración de software de ingeniería (incluyendo herramientas CAD).</li>
-      <li>Apoyo en diseño y fabricación de recipientes a presión y torres de destilación, mediante hojas de cálculo y sistemas especializados.</li>
-    </ul>
+      <p>
+        <strong>Head of IT Department</strong><br>
+        <em>DSD-CGI C.A. Compañía General de Industrias – Puerto Ordaz, Venezuela</em><br>
+        <span>1994 – 1995</span>
+      </p>
+      <ul>
+        <li>Maintenance of IT infrastructure and engineering software (including CAD tools).</li>
+        <li>Support for design and manufacturing of pressure vessels and distillation towers through specialized software.</li>
+      </ul>
 
-    <p>
-      <strong>Instructor de Programación</strong><br>
-      <em>Funda U.D.O. – Universidad de Oriente, Núcleo Bolívar, Venezuela</em><br>
-      <span>1992 – 1993</span>
-    </p>
-    <ul>
-      <li>Docente de lenguajes de programación (Turbo Basic, COBOL, dBase, Clipper, FoxPro) y paquetes de ofimática.</li>
-      <li>Formación de estudiantes universitarios en fundamentos de lógica, algoritmos y herramientas de productividad.</li>
-    </ul>
+      <p>
+        <strong>Programming Instructor</strong><br>
+        <em>Funda U.D.O. – Universidad de Oriente, Bolívar Campus, Venezuela</em><br>
+        <span>1992 – 1993</span>
+      </p>
+      <ul>
+        <li>Teaching programming languages (Turbo Basic, COBOL, dBase, Clipper, FoxPro) and office tools.</li>
+        <li>Training university students in logic, algorithms and productivity tools.</li>
+      </ul>
 
-    <!-- FORMACIÓN ACADÉMICA -->
-    <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+      <h2 class="section-title">EDUCATION</h2>
 
-    <p>
-      <strong>Licenciado en Administración, mención Informática</strong><br>
-      Universidad Nacional Experimental “Simón Rodríguez” – Venezuela<br>
-      2000 – 2003
-    </p>
+      <p>
+        <strong>Bachelor in Business Administration, major in Informatics</strong><br>
+        Universidad Nacional Experimental “Simón Rodríguez” – Venezuela (2000 – 2003)
+      </p>
 
-    <p>
-      <strong>Diplomado en Química de Hidrocarburos</strong><br>
-      Centro Internacional de Educación y Desarrollo (CIED – PDVSA)
-    </p>
+      <p>
+        <strong>Diploma in Hydrocarbons Chemistry</strong><br>
+        PDVSA International Center for Education and Development (CIED)
+      </p>
 
-    <p>
-      <strong>Técnico Superior Universitario en Informática</strong><br>
-      Instituto Universitario de Tecnología Industrial “Rodolfo Loero Arismendi” (IUTIRLA) – Venezuela<br>
-      1989 – 1992
-    </p>
+      <p>
+        <strong>Higher University Technician in Informatics</strong><br>
+        Instituto Universitario de Tecnología Industrial “Rodolfo Loero Arismendi” (IUTIRLA) – Venezuela (1989 – 1992)
+      </p>
 
-    <!-- CURSOS Y CERTIFICACIONES RELEVANTES (SELECCIÓN ORIENTADA A CHEVRON) -->
-    <h2 class="section-title">CURSOS Y CAPACITACIONES RELEVANTES</h2>
+      <h2 class="section-title">TECHNICAL TRAINING – CIED PDVSA</h2>
 
-    <ul>
-      <li>Deshidratación de Crudos Extrapesados y Bitúmenes – CIED PDVSA.</li>
-      <li>Métodos de Producción – CIED PDVSA.</li>
-      <li>Permisos de Trabajo Seguro – CIED PDVSA.</li>
-      <li>Prácticas de Trabajo Seguro – CIED PDVSA.</li>
-      <li>Seguridad, Higiene y Ambiente en la Industria Petrolera – CIED PDVSA.</li>
-      <li>Evaluación de Atmósferas Peligrosas – CIED PDVSA.</li>
-      <li>Gestión Preventiva – CIED PDVSA.</li>
-      <li>Herramientas para el Diseño de Procesos: Procedimientos y Documentación – CIED PDVSA.</li>
-      <li>Gestión de Avisos en SAP PM – CIED PDVSA.</li>
-      <li>Inglés de Negocios y Comunicación – Programas avanzados de ESL y Business English.</li>
-    </ul>
+      <ul>
+        <li>Safe Work Permits – CIED, PDVSA International Center for Education.</li>
+        <li>Safe Work Practices – CIED, PDVSA International Center for Education.</li>
+        <li>Security, Hygiene and Environment in the Oil and Petrochemical Industry – CIED PDVSA.</li>
+        <li>Basic Integral Security – CIED, PDVSA International Center for Education.</li>
+        <li>Tools for Process Design: Procedures and Documentation – CIED PDVSA.</li>
+        <li>Creator of Warnings in Order Management: SAP PM – CIED PDVSA.</li>
+        <li>Evaluation of Dangerous Atmospheres – CIED, PDVSA International Center for Education.</li>
+        <li>Dehydration of Extra-Heavy Crudes and Bitumen – CIED PDVSA.</li>
+        <li>Production Methods – CIED, PDVSA International Center for Education.</li>
+        <li>Well Modules – Pilot Users – CIED PDVSA.</li>
+        <li>Preventive Management – CIED, PDVSA International Center for Education.</li>
+      </ul>
 
-    <!-- HABILIDADES CLAVE -->
-    <h2 class="section-title">HABILIDADES CLAVE</h2>
+      <h2 class="section-title">KEY SKILLS</h2>
 
-    <p style="text-align:justify; font-size:13.5pt;">
-      <strong>Operaciones de Crudo Extrapesado:</strong> Deshidratación, operación de estaciones y plantas, monitoreo telemétrico,
-      análisis de corte de agua, operación de separadores, hornos, sistemas de dilución y manejo de tanques.
-      <br><br>
-      <strong>Automatización y Sistemas:</strong> SCADA, telemetría, SAP PM (nivel usuario avanzado), diseño de bases de datos,
-      dashboards y herramientas digitales de soporte a la operación.
-      <br><br>
-      <strong>Inteligencia Artificial &amp; Prompt Engineering:</strong> Diseño de prompts, integración de IA generativa en flujos de trabajo,
-      automatización de reportes, apoyo al análisis de datos y mejora de procesos.
-      <br><br>
-      <strong>Liderazgo y Gestión de Equipos:</strong> Dirección de compañías de tecnología con más de 80 personas, coordinación
-      de equipos multidisciplinarios, negociación de alto nivel y gestión de proyectos complejos.
-      <br><br>
-      <strong>Idiomas:</strong> Español (nativo), Inglés (fluido), Portugués (fluido).
-    </p>
+      <p>
+        <strong>Extra-Heavy Crude Operations:</strong> Dehydration, gathering systems, water injection plants,
+        separators, heaters, dilution, tanks, BS&amp;W and water cut control.<br><br>
+        <strong>Automation &amp; Systems:</strong> SCADA and telemetric monitoring (user level), SAP PM (advanced user),
+        database and dashboard design, digital tools for operations support.<br><br>
+        <strong>AI &amp; Prompt Engineering:</strong> Design of prompts, AI-assisted workflows, automated reporting and
+        decision support.<br><br>
+        <strong>Leadership:</strong> Management of large multidisciplinary teams, project management, contract
+        negotiation and transformation initiatives.<br><br>
+        <strong>Languages:</strong> Spanish (native), English (fluent), Portuguese (fluent).
+      </p>
 
-    <div class="final-note">
-      LISTO PARA REGRESAR A ANZOÁTEGUI / FAJA DEL ORINOCO<br>
-      DISPONIBILIDAD INMEDIATA – CUALQUIER CARGO – CUALQUIER RETO, EN OFICINA O EN CAMPO ABIERTO
-    </div>
+      <div class="final-note">
+        READY TO RELOCATE TO VENEZUELA – FULL AVAILABILITY FOR FIELD OR OFFICE ROLES<br>
+        COMMITTED TO SAFETY, RELIABILITY AND OPERATIONAL EXCELLENCE
+      </div>
 
-  </div> <!-- end content -->
-</div> <!-- end container -->
+    </section>
+
+    <!-- =========================
+         VERSION EN ESPAÑOL
+    ========================== -->
+    <section id="cv-es" class="lang-section">
+
+      <!-- COVER LETTER ES -->
+      <p style="text-align:right; font-size:11.5pt; color:#555;">20 de noviembre de 2025</p>
+
+      <p>
+        Responsable de Selección<br>
+        Chevron Venezuela<br>
+        careers.chevron.com
+      </p>
+
+      <p class="letter">
+        Estimado/a,
+      </p>
+
+      <p class="letter">
+        Me dirijo a usted para postularme a posiciones técnicas, operativas, de transformación digital
+        o apoyo a operaciones dentro de Chevron Venezuela, con especial interés en asignaciones
+        relacionadas con la <strong>Faja Petrolífera del Orinoco</strong> y operaciones de campo.
+        Cuento con <strong>nueve años de experiencia directa</strong> en tratamiento y deshidratación
+        de crudos extrapesados en PDVSA Petroanzoátegui (áreas Bared y Arecuna, instalaciones de
+        hasta 95.000 bbl/d), combinados con más de dos décadas de liderazgo en tecnología, desarrollo
+        de software y automatización de procesos.
+      </p>
+
+      <p class="letter">
+        Mi experiencia de campo abarca <strong>estaciones recolectoras, plantas de inyección de agua
+        salada, salas de control y monitoreo telemétrico de los procesos de deshidratación de crudos
+        extrapesados</strong>, incluyendo operación y supervisión de separadores, hornos, tanques,
+        sistemas de dilución y análisis de corte de agua y sedimentos. Paralelamente, he ocupado
+        cargos como <strong>Director Regional de Informática (OTIC) en el Instituto de Salud Pública
+        del Estado Bolívar (ISPEB)</strong>, <strong>Negociador Internacional Senior en CEMEX Planta
+        Guayana</strong>, <strong>Gerente de Sistemas en Venirantractor C.A.</strong> y
+        <strong>VPO / Director General de una empresa de desarrollo de software con más de 80
+        personas</strong>.
+      </p>
+
+      <p class="letter">
+        En los últimos años también he profundizado en <strong>ingeniería de prompts e interacción
+        avanzada con inteligencias artificiales</strong>, empleando herramientas como ChatGPT y otras
+        para automatizar flujos de trabajo, análisis de datos, documentación y soporte a la toma de
+        decisiones. Esta combinación de <strong>conocimiento profundo de los procesos físicos de
+        tratamiento de crudos extrapesados</strong> y <strong>capacidades digitales y de IA</strong>
+        me permite aportar tanto en operaciones de campo como en iniciativas de
+        <em>digital oilfield, excelencia operacional, confiabilidad y optimización de sistemas
+        automatizados</em>.
+      </p>
+
+      <p class="letter">
+        Estoy plenamente dispuesto a asumir responsabilidades tanto en campo como en oficina, bajo
+        esquemas <strong>rotacionales o de residencia fija</strong>, y listo para regresar a
+        Venezuela tan pronto como se requiera. Me encuentro en buenas condiciones físicas y con total
+        disposición para enfrentar retos exigentes donde la seguridad, la disciplina y el trabajo en
+        equipo sean la base.
+      </p>
+
+      <p class="letter">
+        Agradezco sinceramente la atención que pueda prestar a mi candidatura y quedo a su
+        disposición para conversar en detalle cómo mi experiencia en crudos extrapesados, liderazgo
+        de equipos y transformación digital puede apoyar los objetivos de Chevron en Venezuela.
+      </p>
+
+      <p class="signature">
+        Atentamente,<br><br>
+        Luis Vicente Latorraca Contreras<br>
+        Tel: +55 959 99125-8519 · Email: luislatorraca@gmail.com
+      </p>
+
+      <h2 class="section-title">RESUMEN PROFESIONAL</h2>
+
+      <p>
+        Profesional venezolano del área petrolera con <strong>9 años de experiencia directa de
+        campo</strong> en <strong>deshidratación y tratamiento de crudos extrapesados</strong> en la
+        Faja Petrolífera del Orinoco (PDVSA Petroanzoátegui – áreas Bared y Arecuna – instalaciones
+        de hasta 95.000 bbl/d). Amplio dominio de estaciones recolectoras, plantas de inyección de
+        agua salada, separadores, hornos, tanques, sistemas de dilución, análisis de corte de agua y
+        sedimentos, verificación de instrumentación y monitoreo telemétrico de datos de producción.
+      </p>
+
+      <p>
+        Tras esta experiencia inicial en campo, he desarrollado una trayectoria sólida en
+        <strong>dirección de tecnología, gestión de proyectos y desarrollo de software</strong>,
+        desempeñándome como <strong>Director Regional de Informática (OTIC) del ISPEB</strong>,
+        <strong>Negociador Internacional Senior en CEMEX Planta Guayana</strong>,
+        <strong>Gerente de Sistemas en Venirantractor C.A.</strong> y
+        <strong>VPO / Director General de Orusys / Orusnet</strong>, liderando equipos de más de
+        80 personas y proyectos complejos de transformación digital.
+      </p>
+
+      <p>
+        Desde 2020 trabajo de forma remota para una agencia de marketing de Puerto Rico como
+        <strong>Desarrollador WordPress y Consultor en Automatización de Procesos Digitales</strong>,
+        integrando <strong>herramientas de IA y plataformas de automatización</strong> en múltiples
+        flujos de trabajo. Esto me otorga una combinación poco común de
+        <strong>conocimiento operativo de campo</strong> y <strong>competencias digitales de última
+        generación</strong>.
+      </p>
+
+      <p>
+        <strong>Idiomas:</strong> Español (nativo) · Inglés (fluido) · Portugués (fluido).
+      </p>
+
+      <h2 class="section-title">EXPERIENCIA PROFESIONAL</h2>
+
+      <p>
+        <strong>Desarrollador WordPress &amp; Consultor en Automatización de Procesos Digitales</strong><br>
+        <em>Infinity Media – Agencia de Marketing (Puerto Rico, remoto)</em><br>
+        <span>2020 – Presente</span>
+      </p>
+      <ul>
+        <li>Diseño, desarrollo y mantenimiento de sitios corporativos, tiendas en línea y páginas de aterrizaje de alto rendimiento.</li>
+        <li>Implementación de flujos de automatización (CRMs, integradores) y uso intensivo de IA para análisis, documentación y reportería.</li>
+        <li>Diseño de tableros y herramientas digitales aplicables a entornos industriales (KPIs operativos, visualización de datos, seguimiento de indicadores).</li>
+      </ul>
+
+      <p>
+        <strong>Vicepresidente de Operaciones / Director General</strong><br>
+        <em>Orusys de Venezuela / Orusnet Games &amp; Apps Development – Caracas, Venezuela</em><br>
+        <span>2005 – 2020</span>
+      </p>
+      <ul>
+        <li>Dirección general de una empresa de desarrollo de software y videojuegos con más de 80 colaboradores.</li>
+        <li>Definición de estrategias, modelos de negocio y portafolio de servicios para clientes corporativos y productos propios.</li>
+        <li>Implementación de metodologías ágiles, medición de desempeño y mejora continua.</li>
+      </ul>
+
+      <p>
+        <strong>Director Regional de Informática – OTIC</strong><br>
+        <em>Instituto de Salud Pública del Estado Bolívar (ISPEB) – Estado Bolívar, Venezuela</em><br>
+        <span>2012 – 2013</span>
+      </p>
+      <ul>
+        <li>Responsable de la infraestructura tecnológica y de comunicaciones del sistema de salud pública regional.</li>
+        <li>Gestión de equipos multidisciplinarios y alineación de la estrategia tecnológica con las prioridades sanitarias.</li>
+        <li>Definición de estándares de seguridad, disponibilidad y calidad para sistemas críticos.</li>
+      </ul>
+
+      <p>
+        <strong>Gerente de Proyectos</strong><br>
+        <em>GSI Fábrica de Software – Caracas, Venezuela</em><br>
+        <span>2011 – 2012</span>
+      </p>
+      <ul>
+        <li>Gestión de proyectos de desarrollo de software a la medida para clientes corporativos.</li>
+        <li>Coordinación de equipos de desarrollo, pruebas y soporte, cumpliendo plazos, presupuestos y niveles de calidad.</li>
+      </ul>
+
+      <p>
+        <strong>Gerente de Sistemas</strong><br>
+        <em>Venirantractor C.A. – Zona Industrial Los Farallones, Estado Bolívar, Venezuela</em><br>
+        <span>2007 – 2009</span>
+      </p>
+      <ul>
+        <li>Administración de la infraestructura tecnológica corporativa (redes, servidores, sistemas de negocio y soporte a usuarios).</li>
+        <li>Definición e implementación de políticas de TI enfocadas en confiabilidad, seguridad y disponibilidad.</li>
+      </ul>
+
+      <p>
+        <strong>Negociador Internacional Senior</strong><br>
+        <em>CEMEX de Venezuela C.A. – Planta Guayana, Estado Bolívar, Venezuela</em><br>
+        <span>2005 – 2007</span>
+      </p>
+      <ul>
+        <li>Negociación de contratos y adquisiciones de materiales, bienes y servicios con proveedores nacionales e internacionales.</li>
+        <li>Optimización de costos, calidad y tiempos de entrega bajo estrictas políticas de seguridad y ambiente.</li>
+      </ul>
+
+      <p>
+        <strong>Técnico en Tratamiento de Crudos Extrapesados</strong><br>
+        <em>Petróleos de Venezuela S.A. (PDVSA Petroanzoátegui) – San Tomé, Estado Anzoátegui, Venezuela</em><br>
+        <span>1994 – 2002</span>
+      </p>
+      <ul>
+        <li>Operación de estaciones recolectoras de crudo y plantas de inyección de agua salada en las áreas operacionales Bared y Arecuna.</li>
+        <li>Operador de sala de control para recibo y distribución de crudo y diluente, y monitoreo telemétrico de pozos y plantas deshidratadoras.</li>
+        <li>Toma de muestras y análisis del contenido de agua y sedimentos, operación de separadores, hornos, tanques, bombas y medidores.</li>
+        <li>Mantenimiento menor de equipos y elaboración de informes mensuales de producción, calidad y desempeño operativo.</li>
+      </ul>
+
+      <h2 class="section-title">EXPERIENCIA TEMPRANA</h2>
+
+      <p>
+        <strong>Jefe del Departamento de Informática</strong><br>
+        <em>Unión Israelita de Caracas – Caracas, Venezuela</em><br>
+        <span>1993 – 1994</span>
+      </p>
+      <ul>
+        <li>Planificación y supervisión de las actividades de sistemas de la institución.</li>
+        <li>Administración de redes, software y hardware, y soporte a usuarios.</li>
+      </ul>
+
+      <p>
+        <strong>Jefe del Departamento de Informática</strong><br>
+        <em>DSD-CGI C.A. Compañía General de Industrias – Puerto Ordaz, Venezuela</em><br>
+        <span>1994 – 1995</span>
+      </p>
+      <ul>
+        <li>Mantenimiento de la infraestructura informática y del software de ingeniería (incluyendo herramientas CAD).</li>
+        <li>Apoyo al diseño y fabricación de recipientes a presión y torres de destilación mediante software especializado.</li>
+      </ul>
+
+      <p>
+        <strong>Instructor de Programación</strong><br>
+        <em>Funda U.D.O. – Universidad de Oriente, Núcleo Bolívar, Venezuela</em><br>
+        <span>1992 – 1993</span>
+      </p>
+      <ul>
+        <li>Docente de lenguajes de programación (Turbo Basic, COBOL, dBase, Clipper, FoxPro) y paquetes de ofimática.</li>
+        <li>Formación de estudiantes universitarios en lógica, algoritmos y herramientas de productividad.</li>
+      </ul>
+
+      <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+
+      <p>
+        <strong>Licenciado en Administración, mención Informática</strong><br>
+        Universidad Nacional Experimental “Simón Rodríguez” – Venezuela (2000 – 2003)
+      </p>
+
+      <p>
+        <strong>Diplomado en Química de Hidrocarburos</strong><br>
+        Centro Internacional de Educación y Desarrollo (CIED – PDVSA)
+      </p>
+
+      <p>
+        <strong>Técnico Superior Universitario en Informática</strong><br>
+        Instituto Universitario de Tecnología Industrial “Rodolfo Loero Arismendi” (IUTIRLA) – Venezuela (1989 – 1992)
+      </p>
+
+      <h2 class="section-title">CAPACITACIONES TÉCNICAS – CIED PDVSA</h2>
+
+      <ul>
+        <li>Safe Work Permits – CIED, PDVSA International Center for Education.</li>
+        <li>Safe Work Practices – CIED, PDVSA International Center for Education.</li>
+        <li>Security, Hygiene, and Environment in the Oil and Petrochemical Industry – CIED PDVSA.</li>
+        <li>Basic Integral Security – CIED, PDVSA International Center for Education.</li>
+        <li>Tools for Process Design: Procedures and Documentation – CIED PDVSA.</li>
+        <li>Creator of Warnings in Order Management: SAP PM – CIED PDVSA.</li>
+        <li>Evaluation of Dangerous Atmospheres – CIED, PDVSA International Center for Education.</li>
+        <li>Dehydration of Extra-Heavy Crudes and Bitumen – CIED PDVSA.</li>
+        <li>Production Methods – CIED, PDVSA International Center for Education.</li>
+        <li>Well Modules – Pilot Users – CIED PDVSA.</li>
+        <li>Preventive Management – CIED, PDVSA International Center for Education.</li>
+      </ul>
+
+      <h2 class="section-title">HABILIDADES CLAVE</h2>
+
+      <p>
+        <strong>Operaciones de Crudos Extrapesados:</strong> Deshidratación, sistemas de recolección, plantas de inyección de agua salada,
+        separadores, hornos, dilución, tanques, control de corte de agua y BS&amp;W.<br><br>
+        <strong>Automatización y Sistemas:</strong> Monitoreo telemétrico y SCADA (usuario), SAP PM (usuario avanzado),
+        diseño de bases de datos, tableros y herramientas digitales de apoyo a la operación.<br><br>
+        <strong>Inteligencia Artificial &amp; Prompt Engineering:</strong> Diseño de prompts, flujos de trabajo asistidos por IA,
+        reportería automatizada y apoyo al análisis de datos.<br><br>
+        <strong>Liderazgo:</strong> Gestión de equipos multidisciplinarios de más de 80 personas, dirección de proyectos,
+        negociación de contratos y conducción de iniciativas de cambio.<br><br>
+        <strong>Idiomas:</strong> Español (nativo), Inglés (fluido), Portugués (fluido).
+      </p>
+
+      <div class="final-note">
+        DISPUESTO A REGRESAR A VENEZUELA – TOTAL DISPONIBILIDAD PARA ROLES EN CAMPO U OFICINA<br>
+        COMPROMETIDO CON LA SEGURIDAD, LA CONFIABILIDAD Y LA EXCELENCIA OPERACIONAL
+      </div>
+
+    </section>
+
+  </div> <!-- content -->
+</div> <!-- container -->
+
+<script>
+  function showLang(lang) {
+    var es = document.getElementById('cv-es');
+    var en = document.getElementById('cv-en');
+    var btnEs = document.getElementById('btn-es');
+    var btnEn = document.getElementById('btn-en');
+
+    if (lang === 'es') {
+      es.style.display = 'block';
+      en.style.display = 'none';
+      btnEs.classList.add('active');
+      btnEn.classList.remove('active');
+    } else {
+      en.style.display = 'block';
+      es.style.display = 'none';
+      btnEn.classList.add('active');
+      btnEs.classList.remove('active');
+    }
+  }
+
+  // Mostrar versión EN por defecto
+  showLang('en');
+</script>
+
 </body>
 </html>
