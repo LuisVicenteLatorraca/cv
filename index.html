@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luis Vicente Latorraca Contreras - Chevron-Oriented CV</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -13,12 +17,14 @@
       color: #333;
       line-height: 1.6;
     }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
       background: #ffffff;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
+
     .header {
       background: #002856;
       color: #ffffff;
@@ -27,6 +33,7 @@
       align-items: center;
       border-bottom: 10px solid #00A3E0;
     }
+
     .photo {
       width: 180px;
       height: 180px;
@@ -36,29 +43,41 @@
       object-fit: cover;
       flex-shrink: 0;
     }
+
     .header-text {
       margin-left: 50px;
     }
+
     .name {
       font-size: 40pt;
       font-weight: bold;
       margin: 0;
       line-height: 1.1;
     }
+
     .title {
       font-size: 18pt;
       margin: 8px 0 0;
     }
+
     .contact {
       font-size: 12pt;
       margin-top: 20px;
       line-height: 1.7;
     }
+
     .lang-switch {
       text-align: right;
       padding: 15px 60px 0;
       background: #ffffff;
     }
+
+    .lang-switch span {
+      font-size: 10.5pt;
+      margin-right: 6px;
+      color: #444;
+    }
+
     .lang-switch button {
       border: 1px solid #002856;
       background: #ffffff;
@@ -69,13 +88,16 @@
       cursor: pointer;
       font-size: 11pt;
     }
+
     .lang-switch button.active {
       background: #002856;
       color: #ffffff;
     }
+
     .content {
       padding: 40px 70px 60px;
     }
+
     .section-title {
       color: #002856;
       font-size: 18pt;
@@ -84,6 +106,7 @@
       margin: 50px 0 30px;
       position: relative;
     }
+
     .section-title::after {
       content: '';
       display: block;
@@ -92,30 +115,39 @@
       background: #00A3E0;
       margin: 10px auto 0;
     }
+
     .letter {
       font-size: 11.5pt;
       text-align: justify;
       margin-bottom: 12px;
     }
+
     .signature {
       margin-top: 50px;
       font-size: 11.5pt;
     }
+
     p, li {
       font-size: 11.5pt;
     }
+
     ul {
       margin: 5px 0 20px 20px;
+      padding-left: 18px;
     }
+
     li {
       margin-bottom: 4px;
     }
+
     strong {
       color: #00A3E0;
     }
+
     em {
       font-style: italic;
     }
+
     .final-note {
       text-align: center;
       padding: 30px 20px;
@@ -125,8 +157,117 @@
       background: #f0f8ff;
       margin: 40px -70px -40px -70px;
     }
+
     .lang-section {
       display: none;
+    }
+
+    /* =========================
+       *******  RESPONSIVE *******
+       ========================== */
+
+    /* Tablets / pantallas medianas */
+    @media (max-width: 900px) {
+      .header {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .photo {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+      }
+
+      .header-text {
+        margin-left: 0;
+      }
+
+      .name {
+        font-size: 30pt;
+      }
+
+      .title {
+        font-size: 15pt;
+      }
+
+      .contact {
+        font-size: 11pt;
+      }
+
+      .lang-switch {
+        padding: 15px 20px 0;
+        text-align: center;
+      }
+
+      .content {
+        padding: 30px 20px 40px;
+      }
+
+      .section-title {
+        font-size: 16pt;
+        margin: 40px 0 25px;
+      }
+
+      .final-note {
+        margin: 30px -20px -30px -20px;
+        font-size: 12pt;
+      }
+    }
+
+    /* Smartphones (iPhone, Android modernos) */
+    @media (max-width: 600px) {
+      .header {
+        padding: 24px 16px;
+      }
+
+      .photo {
+        width: 140px;
+        height: 140px;
+      }
+
+      .name {
+        font-size: 24pt;
+      }
+
+      .title {
+        font-size: 13pt;
+      }
+
+      .contact {
+        font-size: 10.5pt;
+        line-height: 1.5;
+      }
+
+      .lang-switch {
+        padding: 12px 12px 0;
+      }
+
+      .lang-switch button {
+        padding: 5px 10px;
+        font-size: 10pt;
+        margin-left: 4px;
+      }
+
+      .content {
+        padding: 24px 14px 32px;
+      }
+
+      p, li, .letter, .signature {
+        font-size: 10.5pt;
+      }
+
+      .section-title {
+        font-size: 14pt;
+        margin: 30px 0 18px;
+      }
+
+      .final-note {
+        margin: 24px -14px -24px -14px;
+        font-size: 11.5pt;
+        padding: 22px 14px;
+      }
     }
   </style>
 </head>
@@ -156,7 +297,7 @@
 
   <!-- SWITCH DE IDIOMA -->
   <div class="lang-switch">
-    <span style="font-size:10.5pt; margin-right:6px; color:#444;">Language / Idioma:</span>
+    <span>Language / Idioma:</span>
     <button id="btn-en" class="active" onclick="showLang('en')">EN</button>
     <button id="btn-es" onclick="showLang('es')">ES</button>
   </div>
@@ -183,8 +324,8 @@
 
       <p class="letter">
         I am writing to express my interest in technical, operations, digital transformation or
-        upstream support roles within Chevron Venezuela, preferably in assignments connected to
-        the <strong>Orinoco Oil Belt</strong> and field operations. I bring <strong>nine years of
+        upstream support roles within Chevron Venezuela, preferably in assignments connected to the
+        <strong>Orinoco Oil Belt</strong> and field operations. I bring <strong>nine years of
         direct hands-on experience</strong> in extra-heavy crude oil treatment in PDVSA
         Petroanzoátegui (Bared and Arecuna areas, facilities up to 95,000 bbl/d), combined with
         more than two decades leading technology, software development and process automation teams.
@@ -207,7 +348,7 @@
         interaction with AI systems</strong>, using tools such as ChatGPT and others to support
         automation, data analysis, documentation and decision-making. This combination of
         <strong>deep physical process knowledge in extra-heavy crude treatment</strong> and
-        <strong>digital & AI capabilities</strong> allows me to contribute both on site and in
+        <strong>digital &amp; AI capabilities</strong> allows me to contribute both on site and in
         initiatives such as <em>digital oilfield, operational excellence, reliability and
         optimization of automated systems</em>.
       </p>
